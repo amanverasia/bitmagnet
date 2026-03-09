@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/httpserver"
-	"github.com/bitmagnet-io/bitmagnet/internal/importer"
-	"github.com/bitmagnet-io/bitmagnet/internal/lazy"
+	"github.com/amanverasia/bitmagnet/internal/httpserver"
+	"github.com/amanverasia/bitmagnet/internal/importer"
+	"github.com/amanverasia/bitmagnet/internal/lazy"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
-	"github.com/bitmagnet-io/bitmagnet/internal/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/tmdb"
+	"github.com/amanverasia/bitmagnet/internal/health"
+	"github.com/amanverasia/bitmagnet/internal/lazy"
+	"github.com/amanverasia/bitmagnet/internal/tmdb"
 )
 
 func NewCheck(

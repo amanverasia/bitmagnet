@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/database/query"
+	"github.com/amanverasia/bitmagnet/internal/model"
 )
 
 func TorrentContentEpisodesCriteria(episodes model.Episodes) query.Criteria {

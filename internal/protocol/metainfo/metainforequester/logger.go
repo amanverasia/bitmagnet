@@ -5,7 +5,7 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"github.com/amanverasia/bitmagnet/internal/protocol"
 	"go.uber.org/zap"
 )
 

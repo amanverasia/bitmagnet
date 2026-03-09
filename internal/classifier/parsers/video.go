@@ -3,10 +3,10 @@ package parsers
 import (
 	"strconv"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/keywords"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/regex"
+	"github.com/amanverasia/bitmagnet/internal/classifier/classification"
+	"github.com/amanverasia/bitmagnet/internal/keywords"
+	"github.com/amanverasia/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/regex"
 	"github.com/hedhyw/rex/pkg/dialect"
 	"github.com/hedhyw/rex/pkg/rex"
 )

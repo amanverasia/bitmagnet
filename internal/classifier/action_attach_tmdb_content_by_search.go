@@ -1,8 +1,8 @@
 package classifier
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/classifier/classification"
+	"github.com/amanverasia/bitmagnet/internal/model"
 )
 
 const attachTmdbContentBySearchName = "attach_tmdb_content_by_search"

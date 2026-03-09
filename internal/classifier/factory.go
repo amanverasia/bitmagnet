@@ -3,9 +3,9 @@ package classifier
 import (
 	"fmt"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/tmdb"
+	"github.com/amanverasia/bitmagnet/internal/database/search"
+	"github.com/amanverasia/bitmagnet/internal/lazy"
+	"github.com/amanverasia/bitmagnet/internal/tmdb"
 	"go.uber.org/fx"
 )
 

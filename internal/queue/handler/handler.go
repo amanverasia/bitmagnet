@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/model"
 )
 
 const (

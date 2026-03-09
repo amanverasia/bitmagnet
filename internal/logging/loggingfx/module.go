@@ -1,8 +1,8 @@
 package loggingfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/logging"
+	"github.com/amanverasia/bitmagnet/internal/config/configfx"
+	"github.com/amanverasia/bitmagnet/internal/logging"
 	"go.uber.org/fx"
 	"go.uber.org/fx/fxevent"
 	"go.uber.org/zap"

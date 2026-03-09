@@ -24,7 +24,7 @@ COPY --from=webui-build /src/webui/dist ./webui/dist
 
 RUN go build \
     -trimpath \
-    -ldflags="-s -w -X github.com/bitmagnet-io/bitmagnet/internal/version.GitTag=${GIT_TAG}" \
+    -ldflags="-s -w -X github.com/amanverasia/bitmagnet/internal/version.GitTag=${GIT_TAG}" \
     -o /out/bitmagnet
 
 FROM scratch

@@ -2,7 +2,7 @@ package classifier
 
 import (
 	"github.com/agnivade/levenshtein"
-	"github.com/bitmagnet-io/bitmagnet/internal/regex"
+	"github.com/amanverasia/bitmagnet/internal/regex"
 	"github.com/mozillazg/go-unidecode"
 )
 

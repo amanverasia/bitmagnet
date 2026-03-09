@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/maps"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/database/query"
+	"github.com/amanverasia/bitmagnet/internal/maps"
+	"github.com/amanverasia/bitmagnet/internal/model"
 )
 
 const LanguageFacetKey = "language"

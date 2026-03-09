@@ -3,10 +3,10 @@ package search
 import (
 	"context"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"github.com/amanverasia/bitmagnet/internal/database/dao"
+	"github.com/amanverasia/bitmagnet/internal/database/query"
+	"github.com/amanverasia/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/protocol"
 	"gorm.io/gen/field"
 )
 

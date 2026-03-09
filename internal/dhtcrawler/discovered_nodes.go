@@ -5,8 +5,8 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/concurrency"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
+	"github.com/amanverasia/bitmagnet/internal/concurrency"
+	"github.com/amanverasia/bitmagnet/internal/protocol/dht/ktable"
 	"go.uber.org/fx"
 )
 

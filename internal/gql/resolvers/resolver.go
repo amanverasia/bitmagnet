@@ -1,15 +1,15 @@
 package resolvers
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/blocking"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/manager"
-	"github.com/bitmagnet-io/bitmagnet/internal/worker"
+	"github.com/amanverasia/bitmagnet/internal/blocking"
+	"github.com/amanverasia/bitmagnet/internal/database/dao"
+	"github.com/amanverasia/bitmagnet/internal/database/search"
+	"github.com/amanverasia/bitmagnet/internal/health"
+	"github.com/amanverasia/bitmagnet/internal/metrics/queuemetrics"
+	"github.com/amanverasia/bitmagnet/internal/metrics/torrentmetrics"
+	"github.com/amanverasia/bitmagnet/internal/processor"
+	"github.com/amanverasia/bitmagnet/internal/queue/manager"
+	"github.com/amanverasia/bitmagnet/internal/worker"
 )
 
 // This file will not be regenerated automatically.

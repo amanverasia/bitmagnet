@@ -1,14 +1,14 @@
 package databasefx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/database"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/cache"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/healthcheck"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/migrations"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/postgres"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
+	"github.com/amanverasia/bitmagnet/internal/config/configfx"
+	"github.com/amanverasia/bitmagnet/internal/database"
+	"github.com/amanverasia/bitmagnet/internal/database/cache"
+	"github.com/amanverasia/bitmagnet/internal/database/dao"
+	"github.com/amanverasia/bitmagnet/internal/database/healthcheck"
+	"github.com/amanverasia/bitmagnet/internal/database/migrations"
+	"github.com/amanverasia/bitmagnet/internal/database/postgres"
+	"github.com/amanverasia/bitmagnet/internal/database/search"
 	"go.uber.org/fx"
 )
 

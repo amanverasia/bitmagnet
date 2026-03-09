@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
+	"github.com/amanverasia/bitmagnet/internal/protocol/dht/ktable"
 )
 
 func (c *crawler) reseedBootstrapNodes(ctx context.Context) {

@@ -5,8 +5,8 @@ import (
 	"database/sql/driver"
 	"time"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"github.com/amanverasia/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/protocol"
 )
 
 // runInfoHashTriage receives discovered hashes on the infoHashTriage channel, determines if they should be crawled,

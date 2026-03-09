@@ -3,9 +3,9 @@ package adapter
 import (
 	"strconv"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/torznab"
+	"github.com/amanverasia/bitmagnet/internal/database/search"
+	"github.com/amanverasia/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/torznab"
 )
 
 func torrentContentResultToTorznabResult(

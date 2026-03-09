@@ -1,12 +1,12 @@
 package dhtfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/client"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/responder"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/server"
+	"github.com/amanverasia/bitmagnet/internal/config/configfx"
+	"github.com/amanverasia/bitmagnet/internal/protocol"
+	"github.com/amanverasia/bitmagnet/internal/protocol/dht/client"
+	"github.com/amanverasia/bitmagnet/internal/protocol/dht/ktable"
+	"github.com/amanverasia/bitmagnet/internal/protocol/dht/responder"
+	"github.com/amanverasia/bitmagnet/internal/protocol/dht/server"
 	"go.uber.org/fx"
 )
 

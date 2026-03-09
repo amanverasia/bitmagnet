@@ -10,12 +10,15 @@ nav_order: 1
 
 ## Docker
 
-The quickest way to get up-and-running with **bitmagnet** is with [Docker Compose](https://docs.docker.com/compose/). The repository root [`docker-compose.yml`](https://github.com/bitmagnet-io/bitmagnet/blob/main/docker-compose.yml) now provides a minimal local stack that builds the image from source. The following example shows the same minimal layout using the published image.
+The quickest way to get up-and-running with **bitmagnet** is with [Docker Compose](https://docs.docker.com/compose/). The repository root [`docker-compose.yml`](https://github.com/amanverasia/bitmagnet/blob/main/docker-compose.yml) now provides a minimal local stack that builds the image from source. The following example shows the same minimal layout using a locally built image.
 
 ```yml
 services:
   bitmagnet:
-    image: ghcr.io/bitmagnet-io/bitmagnet:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.scratch
+    image: bitmagnet:local
     container_name: bitmagnet
     ports:
       # API and WebUI port:
@@ -68,16 +71,13 @@ To upgrade your installation you can run:
 
 ```sh
 docker compose down bitmagnet
-# If your compose file uses `image:`
-docker pull ghcr.io/bitmagnet-io/bitmagnet:latest
-# If your compose file uses `build:`
 docker compose build bitmagnet
 docker compose up -d bitmagnet
 ```
 
 ## go install
 
-You can also install **bitmagnet** natively with `go install github.com/bitmagnet-io/bitmagnet`. If you choose this method you will need to [configure]({% link setup/configuration.md %}) (at a minimum) a Postgres instance for bitmagnet to connect to.
+You can also install **bitmagnet** natively from a local checkout with `go install .`. If you choose this method you will need to [configure]({% link setup/configuration.md %}) (at a minimum) a Postgres instance for bitmagnet to connect to.
 
 ## Running the CLI
 

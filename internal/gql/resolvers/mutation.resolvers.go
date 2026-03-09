@@ -7,12 +7,12 @@ package resolvers
 import (
 	"context"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"github.com/amanverasia/bitmagnet/internal/classifier"
+	"github.com/amanverasia/bitmagnet/internal/gql"
+	"github.com/amanverasia/bitmagnet/internal/gql/gqlmodel"
+	"github.com/amanverasia/bitmagnet/internal/gql/gqlmodel/gen"
+	"github.com/amanverasia/bitmagnet/internal/processor"
+	"github.com/amanverasia/bitmagnet/internal/protocol"
 )
 
 // Torrent is the resolver for the torrent field.

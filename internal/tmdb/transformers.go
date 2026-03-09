@@ -3,9 +3,9 @@ package tmdb
 import (
 	"strconv"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/slice"
+	"github.com/amanverasia/bitmagnet/internal/classifier/classification"
+	"github.com/amanverasia/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/slice"
 )
 
 func MovieDetailsToMovieModel(details MovieDetailsResponse) (movie model.Content, err error) {

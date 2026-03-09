@@ -4,10 +4,10 @@ import (
 	"context"
 	"database/sql/driver"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/slice"
+	"github.com/amanverasia/bitmagnet/internal/database/dao"
+	"github.com/amanverasia/bitmagnet/internal/model"
+	"github.com/amanverasia/bitmagnet/internal/protocol"
+	"github.com/amanverasia/bitmagnet/internal/slice"
 	"gorm.io/gorm/clause"
 )
 
