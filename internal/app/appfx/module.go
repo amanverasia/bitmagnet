@@ -6,6 +6,7 @@ import (
 	"github.com/amanverasia/bitmagnet/internal/app/cli/hooks"
 	"github.com/amanverasia/bitmagnet/internal/app/cmd/classifiercmd"
 	"github.com/amanverasia/bitmagnet/internal/app/cmd/configcmd"
+	"github.com/amanverasia/bitmagnet/internal/app/cmd/healthcheckcmd"
 	"github.com/amanverasia/bitmagnet/internal/app/cmd/processcmd"
 	"github.com/amanverasia/bitmagnet/internal/app/cmd/reprocesscmd"
 	"github.com/amanverasia/bitmagnet/internal/app/cmd/workercmd"
@@ -66,6 +67,7 @@ func New() fx.Option {
 			// cli commands:
 			classifiercmd.New,
 			configcmd.New,
+			healthcheckcmd.New,
 			reprocesscmd.New,
 			processcmd.New,
 			workercmd.New,

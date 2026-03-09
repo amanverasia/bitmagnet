@@ -1,7 +1,7 @@
 # TODO
 
 ## Low Effort, High Value
-- [ ] Add a `healthcheck` to the `bitmagnet` service in `docker-compose.yml` using `/status`.
+- [x] Add a `healthcheck` to the `bitmagnet` service in `docker-compose.yml` using `/status`.
 - [ ] Expand `README.md` with local run instructions, Docker usage, and the current fork/module path.
 - [ ] Add a sample environment/config file such as `.env.example` or a documented `config.yml` template.
 - [ ] Document the purpose of each root Dockerfile (`Dockerfile`, `Dockerfile.scratch`, `Dockerfile_dev`, `ci.Dockerfile`, `goreleaser.Dockerfile`).
@@ -17,6 +17,7 @@
 ## Deployment And Runtime
 - [ ] Stop running the default Docker stack as root, or switch bind mounts to named volumes to avoid root-owned local files.
 - [ ] Split Docker Compose usage into clearer modes such as `search-only`, `crawler`, and `dev`.
+- [ ] Add a workflow to build and publish a Docker image directly so local runs can pull a ready-made image instead of rebuilding every time.
 - [ ] Review whether `/metrics` and `/debug/pprof/*` should stay enabled by default in minimal deployments.
 - [ ] Decide whether `webui/dist` should stay committed or always be built as part of packaging.
 - [ ] Consolidate repeated version/ldflags wiring across the Taskfile and all Dockerfiles.
