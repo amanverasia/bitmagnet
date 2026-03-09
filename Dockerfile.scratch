@@ -1,0 +1,43 @@
+FROM node:22-alpine AS webui-build
+
+WORKDIR /src/webui
+
+COPY webui/package.json webui/package-lock.json ./
+RUN npm ci
+
+COPY webui/ ./
+RUN npm run build
+
+FROM golang:1.23.6-alpine3.20 AS build
+
+ARG GIT_TAG=dev
+
+ENV CGO_ENABLED=0
+ENV GOOS=linux
+
+RUN apk add --no-cache ca-certificates git
+
+WORKDIR /build
+
+COPY . .
+COPY --from=webui-build /src/webui/dist ./webui/dist
+
+RUN go build \
+    -trimpath \
+    -ldflags="-s -w -X github.com/bitmagnet-io/bitmagnet/internal/version.GitTag=${GIT_TAG}" \
+    -o /out/bitmagnet
+
+FROM scratch
+
+ENV HOME=/root
+ENV XDG_CONFIG_HOME=/root/.config
+ENV XDG_DATA_HOME=/root/.local/share
+
+WORKDIR /root
+
+COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+COPY --from=build /out/bitmagnet /usr/bin/bitmagnet
+
+EXPOSE 3333 3334/tcp 3334/udp
+
+ENTRYPOINT ["/usr/bin/bitmagnet"]

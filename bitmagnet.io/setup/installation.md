@@ -10,7 +10,7 @@ nav_order: 1
 
 ## Docker
 
-The quickest way to get up-and-running with **bitmagnet** is with [Docker Compose](https://docs.docker.com/compose/). The following `docker-compose.yml` is a minimal example. For a more full-featured example including VPN routing and observability services see the [docker compose configuration in the GitHub repository](https://github.com/bitmagnet-io/bitmagnet/blob/main/docker-compose.yml).
+The quickest way to get up-and-running with **bitmagnet** is with [Docker Compose](https://docs.docker.com/compose/). The repository root [`docker-compose.yml`](https://github.com/bitmagnet-io/bitmagnet/blob/main/docker-compose.yml) now provides a minimal local stack that builds the image from source. The following example shows the same minimal layout using the published image.
 
 ```yml
 services:
@@ -68,7 +68,10 @@ To upgrade your installation you can run:
 
 ```sh
 docker compose down bitmagnet
+# If your compose file uses `image:`
 docker pull ghcr.io/bitmagnet-io/bitmagnet:latest
+# If your compose file uses `build:`
+docker compose build bitmagnet
 docker compose up -d bitmagnet
 ```
 
